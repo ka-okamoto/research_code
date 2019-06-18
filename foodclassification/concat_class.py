@@ -36,12 +36,9 @@ data_transforms = transforms.Compose([
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
 ])
 
-if int(args.month) < 7:
- class_dir = '/export/space/nagano-t/tw/img/2016/{}/'.format(args.month)
- splittag = 'tw'
-else:
- class_dir = '/export/space/okamoto-ka/resize_img2016/{}/'.format(args.month)
- splittag = 'okamoto-ka'
+
+class_dir = '/dir/tw/img/2016/{}/'.format(args.month)#月ごとに分けられている画像のフォルダ
+splittag = 'tw'#パスを分解するときに必要な切れめ
 
 print('data_load:{}'.format(class_dir))
 
