@@ -11,3 +11,4 @@
 - foodclassfication:食事・非食事画像の分類を行ったコード。
 - foodfeature:特徴量を抽出したコード。
 - tripletnet:triplet lossをもちいて学習したコード。
+  - 参考にしたページ　https://github.com/andreasveit/triplet-network-pytorch
